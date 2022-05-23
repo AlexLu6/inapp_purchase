@@ -30,14 +30,14 @@ class _InAppState extends State<InApp> {
   late StreamSubscription _purchaseUpdatedSubscription;
   late StreamSubscription _purchaseErrorSubscription;
   late StreamSubscription _conectionSubscription;
-  final List<String> _productLists = Platform.isAndroid
+  final List<String> _productLists = [];/* Platform.isAndroid
       ? [
           'android.test.purchased',
           'point_1000',
           '5000_point',
           'android.test.canceled',
         ]
-      : ['com.cooni.point1000', 'com.cooni.point5000'];
+      : ['com.cooni.point1000', 'com.cooni.point5000'];*/
 
   String _platformVersion = 'Unknown';
   List<IAPItem> _items = [];
