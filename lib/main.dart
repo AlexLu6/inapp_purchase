@@ -32,14 +32,14 @@ class _InAppState extends State<InApp> {
   late StreamSubscription _purchaseUpdatedSubscription;
   late StreamSubscription _purchaseErrorSubscription;
   late StreamSubscription _conectionSubscription;
-  final List<String> _productLists = defaultTargetPlatform == TargetPlatform.android // Platform.isAndroid
+  final List<String> _productLists = defaultTargetPlatform == TargetPlatform.android ||  kIsWeb // Platform.isAndroid
       ? [
           'android.test.purchased',
           'point_1000',
           '5000_point',
           'android.test.canceled',
         ]
-      : kIsWeb ? [] : ['com.cooni.point1000', 'com.cooni.point5000'];
+       : ['com.cooni.point1000', 'com.cooni.point5000'];
 
   String _platformVersion = 'Unknown';
   List<IAPItem> _items = [];
