@@ -39,7 +39,8 @@ class _InAppState extends State<InApp> {
           '5000_point',
           'android.test.canceled',
         ]
-       : ['com.cooni.point1000', 'com.cooni.point5000'];
+       : ['com.cooni.point1000', 
+          'com.cooni.point5000'];
 
   String _platformVersion = 'Unknown';
   List<IAPItem> _items = [];
