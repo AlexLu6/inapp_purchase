@@ -69,7 +69,7 @@ class _InAppState extends State<InApp> {
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
     }
-
+    print('platformVersion: $platformVersion');
     // prepare
     var result = await FlutterInappPurchase.instance.initConnection;
     print('result: $result');
