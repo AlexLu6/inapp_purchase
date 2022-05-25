@@ -34,10 +34,10 @@ class _InAppState extends State<InApp> {
   late StreamSubscription _conectionSubscription;
   final List<String> _productLists = defaultTargetPlatform == TargetPlatform.android ||  kIsWeb // Platform.isAndroid
       ? [
-          'android.test.purchased',
-          'point_1000',
-          '5000_point',
-          'android.test.canceled',
+          'golfer_1_month_fee', //'android.test.purchased',
+          'golfer_1_season_fee', //'point_1000',
+          'golfer_1_year_fee', //'5000_point',
+          //'android.test.canceled',
         ]
        : ['com.cooni.point1000', 
           'com.cooni.point5000'];
