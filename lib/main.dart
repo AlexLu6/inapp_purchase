@@ -39,8 +39,10 @@ class _InAppState extends State<InApp> {
           'golfer_1_year_fee', //'5000_point',
           //'android.test.canceled',
         ]
-       : ['com.cooni.point1000', 
-          'com.cooni.point5000'];
+       : ['golfer_consume_1_month', //'com.cooni.point1000', 
+          'golfer_consume_1_season', //'com.cooni.point5000'
+          'golfer_consume_1_year'
+          ];
 
   String _platformVersion = 'Unknown';
   List<IAPItem> _items = [];
