@@ -317,7 +317,7 @@ class _InAppState extends State<InApp> {
                         Container(
                             width: buttonWidth,
                             height: 60.0,
-                            margin: EdgeInsets.all(7.0),
+                            margin: EdgeInsets.all(3.0),
                             child: FlatButton(
                               color: Colors.green,
                               padding: EdgeInsets.all(0.0),
@@ -339,7 +339,7 @@ class _InAppState extends State<InApp> {
                         Container(
                             width: buttonWidth,
                             height: 60.0,
-                            margin: EdgeInsets.all(7.0),
+                            margin: EdgeInsets.all(3.0),
                             child: FlatButton(
                               color: Colors.green,
                               padding: EdgeInsets.all(0.0),
@@ -362,7 +362,7 @@ class _InAppState extends State<InApp> {
                         Container(
                             width: buttonWidth,
                             height: 60.0,
-                            margin: EdgeInsets.all(7.0),
+                            margin: EdgeInsets.all(3.0),
                             child: FlatButton(
                               color: Colors.green,
                               padding: EdgeInsets.all(0.0),
