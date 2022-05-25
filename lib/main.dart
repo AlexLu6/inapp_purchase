@@ -39,10 +39,11 @@ class _InAppState extends State<InApp> {
           'golfer_1_year_fee', //'5000_point',
           //'android.test.canceled',
         ]
-       : ['golfer_consume_1_month', //'com.cooni.point1000', 
+       : [
+          'golfer_consume_1_month', //'com.cooni.point1000', 
           'golfer_consume_1_season', //'com.cooni.point5000'
           'golfer_consume_1_year'
-          ];
+        ];
 
   String _platformVersion = 'Unknown';
   List<IAPItem> _items = [];
@@ -262,7 +263,7 @@ class _InAppState extends State<InApp> {
                             await FlutterInappPurchase.instance.initConnection;
                           },
                           child: Container(
-                            padding: EdgeInsets.symmetric(horizontal: 20.0),
+                            padding: EdgeInsets.symmetric(horizontal: 2.0),
                             alignment: Alignment(0.0, 0.0),
                             child: Text(
                               'Connect Billing',
@@ -297,7 +298,7 @@ class _InAppState extends State<InApp> {
                             });
                           },
                           child: Container(
-                            padding: EdgeInsets.symmetric(horizontal: 20.0),
+                            padding: EdgeInsets.symmetric(horizontal: 2.0),
                             alignment: Alignment(0.0, 0.0),
                             child: Text(
                               'End Connection',
@@ -325,7 +326,7 @@ class _InAppState extends State<InApp> {
                                 this._getProduct();
                               },
                               child: Container(
-                                padding: EdgeInsets.symmetric(horizontal: 20.0),
+                                padding: EdgeInsets.symmetric(horizontal: 2.0),
                                 alignment: Alignment(0.0, 0.0),
                                 child: Text(
                                   'Get Items',
@@ -348,7 +349,7 @@ class _InAppState extends State<InApp> {
                                 this._getPurchases();
                               },
                               child: Container(
-                                padding: EdgeInsets.symmetric(horizontal: 20.0),
+                                padding: EdgeInsets.symmetric(horizontal: 2.0),
                                 alignment: Alignment(0.0, 0.0),
                                 child: Text(
                                   'Get Purchases',
@@ -371,7 +372,7 @@ class _InAppState extends State<InApp> {
                                 this._getPurchaseHistory();
                               },
                               child: Container(
-                                padding: EdgeInsets.symmetric(horizontal: 20.0),
+                                padding: EdgeInsets.symmetric(horizontal: 2.0),
                                 alignment: Alignment(0.0, 0.0),
                                 child: Text(
                                   'Get Purchase History',
